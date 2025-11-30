@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
+    background-color: #ABBDFF;
+    background: linear-gradient(135deg, #4c6ead, #370550);
+}
+
+.container {
+    border: 1px solid #c7c7c7;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.inp-box {
+    position: relative;
+}
+
+input[type="text"] {
+    height: 40px;
+    width: 310px;
+    padding: 0 20px;
+    border-radius: 30px;
+    background: #e9e2d8;
+    border: none;
+}
+
+#add-btn {
+    position: absolute;
+    right: 0;
+    height: 40px;
+    width: 115px;
+    border-radius: 30px;
+    background: #ff8300;
+    border: none;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+#todo-list {
+    padding: 0;
+    margin: 30px 0 20px;
+}
+#todo-list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#todo-list li button {
+    position: absolute;
+    right: 0;
+    height: 25px;
+    width: 65px;
+    border-radius: 20px;
+    background: #fb6767;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+#todo-list li span {
+    width: 100%;
+    padding: 0 50px 0 5px;
+    font-size: 16px;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+input[type="checkbox"]{
+    height: 18px;
+    width: 18px;
+}
+#todo-list li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
