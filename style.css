@@ -7,6 +7,7 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: #ABBDFF;
     background: linear-gradient(135deg, #4c6ead, #370550);
+    overflow: hidden;
 }
 
 .container {
