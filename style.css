@@ -40,6 +40,7 @@ input[type="text"] {
     background: #ff8300;
     border: none;
     color: #fff;
+    cursor: pointer;
 }
 
 li {
