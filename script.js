@@ -48,6 +48,14 @@ function createTodoNode(todo, idx) {
     const span = document.createElement('span');
     span.textContent = todo.text;
     span.style.textDecoration = todo.completed ? 'line-through' : '';
+   span.addEventListener('dblclick',()=>{
+    const newText=prompt('Edit Your Todo :',todo.text);
+    if(newText !== null){
+        todo.text=newText.trim();
+        span.textContent = todo.text;
+        saveTodos();
+    }
+   })
 
     // checkbox to toggle completion
     const checkbox = document.createElement("input");
